@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrainStation", "TrainStation\TrainStation.vcxproj", "{F93BE51B-F27E-4EC9-82A7-901948D9B391}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Debug|x64.ActiveCfg = Debug|x64
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Debug|x64.Build.0 = Debug|x64
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Debug|x86.ActiveCfg = Debug|Win32
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Debug|x86.Build.0 = Debug|Win32
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Release|x64.ActiveCfg = Release|x64
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Release|x64.Build.0 = Release|x64
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Release|x86.ActiveCfg = Release|Win32
+		{F93BE51B-F27E-4EC9-82A7-901948D9B391}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B48244E-EC9A-457B-95EA-D2A28FC58FCF}
+	EndGlobalSection
+EndGlobal
