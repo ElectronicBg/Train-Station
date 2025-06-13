@@ -13,10 +13,69 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{0d2c1d89-621c-4bc2-9f8c-fe86d05b675a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wagon">
+      <UniqueIdentifier>{df13eaa2-1091-4fdd-b731-6ab1b695e914}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrainStation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyString.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Station.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Train.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wagon.cpp">
+      <Filter>Wagon</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstClassWagon.cpp">
+      <Filter>Wagon</Filter>
+    </ClCompile>
+    <ClCompile Include="SecondClassWagon.cpp">
+      <Filter>Wagon</Filter>
+    </ClCompile>
+    <ClCompile Include="SleeperWagon.cpp">
+      <Filter>Wagon</Filter>
+    </ClCompile>
+    <ClCompile Include="StationRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyVector.hpp">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="MyString.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Station.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Train.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wagon.h">
+      <Filter>Wagon</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstClassWagon.h">
+      <Filter>Wagon</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondClassWagon.h">
+      <Filter>Wagon</Filter>
+    </ClInclude>
+    <ClInclude Include="SleeperWagon.h">
+      <Filter>Wagon</Filter>
+    </ClInclude>
+    <ClInclude Include="StationRepository.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

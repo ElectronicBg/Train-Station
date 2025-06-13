@@ -127,7 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FirstClassWagon.cpp" />
+    <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="SecondClassWagon.cpp" />
+    <ClCompile Include="SleeperWagon.cpp" />
+    <ClCompile Include="Station.cpp" />
+    <ClCompile Include="StationRepository.cpp" />
+    <ClCompile Include="Train.cpp" />
     <ClCompile Include="TrainStation.cpp" />
+    <ClCompile Include="Wagon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FirstClassWagon.h" />
+    <ClInclude Include="MyString.h" />
+    <ClInclude Include="MyVector.hpp" />
+    <ClInclude Include="SecondClassWagon.h" />
+    <ClInclude Include="SleeperWagon.h" />
+    <ClInclude Include="Station.h" />
+    <ClInclude Include="StationRepository.h" />
+    <ClInclude Include="Train.h" />
+    <ClInclude Include="Wagon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
