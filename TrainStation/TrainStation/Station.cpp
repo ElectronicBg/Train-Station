@@ -1,5 +1,7 @@
 #include "Station.h"
 #include <iostream>
+#include <fstream>
+#include "StringHelper.h"
 
 int Station::assignPlatform(const std::chrono::system_clock::time_point& time)
 {
@@ -80,4 +82,32 @@ const MyVector<std::shared_ptr<Train>>& Station::getDepartingTrains() const
 const MyVector<std::weak_ptr<Train>>& Station::getArrivingTrains() const
 {
     return arrivals;
+}
+
+void Station::save(std::ofstream& ofs) const
+{
+    writeString(ofs, name);
+    ofs.write(reinterpret_cast<const char*>(&platforms), sizeof(platforms));
+
+    size_t trainCount = departures.getSize();
+    ofs.write(reinterpret_cast<const char*>(&trainCount), sizeof(trainCount));
+
+    for (size_t i = 0; i < trainCount; ++i) {
+        departures[i]->saveToFile(ofs);
+    }
+}
+
+void Station::load(std::ifstream& ifs)
+{
+    if (!readString(ifs, name)) throw std::runtime_error("Failed to read station name");
+    ifs.read(reinterpret_cast<char*>(&platforms), sizeof(platforms));
+
+    size_t trainCount;
+    ifs.read(reinterpret_cast<char*>(&trainCount), sizeof(trainCount));
+
+    for (size_t i = 0; i < trainCount; ++i) {
+        auto train = std::make_shared<Train>(0, "", "", std::chrono::system_clock::now(), std::chrono::system_clock::now(), 0.0, 0.0);
+        train->loadFromFile(ifs);
+        departures.pushBack(train);
+    }
 }

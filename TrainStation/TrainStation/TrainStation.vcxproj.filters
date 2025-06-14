@@ -19,6 +19,15 @@
     <Filter Include="Wagon">
       <UniqueIdentifier>{df13eaa2-1091-4fdd-b731-6ab1b695e914}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cards">
+      <UniqueIdentifier>{103044ea-9744-4f2e-842a-66f3787115f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User">
+      <UniqueIdentifier>{7ffd6985-d2ea-4614-aa4b-83db2412c8ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{b51f597c-1f02-44e5-9c18-5f64892a6fd4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrainStation.cpp">
@@ -48,6 +57,45 @@
     <ClCompile Include="StationRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DiscountCard.cpp">
+      <Filter>Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="AgeCard.cpp">
+      <Filter>Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="RouteCard.cpp">
+      <Filter>Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceCard.cpp">
+      <Filter>Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscountCardRepository.cpp">
+      <Filter>Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="Admin.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminRepository.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="TrainSystemApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandFactory.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintStationsCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="AddStationCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyVector.hpp">
@@ -76,6 +124,48 @@
     </ClInclude>
     <ClInclude Include="StationRepository.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscountCard.h">
+      <Filter>Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="AgeCard.h">
+      <Filter>Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="RouteCard.h">
+      <Filter>Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceCard.h">
+      <Filter>Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscountCardRepository.h">
+      <Filter>Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="Admin.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminRepository.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="TrainSystemApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandFactory.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintStationsCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelper.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="AddStationCommand.h">
+      <Filter>Commands</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

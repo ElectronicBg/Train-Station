@@ -23,6 +23,15 @@ public:
     bool isSeatFree(int idx) const;
     void occupySeat(int idx);
 
+    void setId(int newId);
+    void setBasePrice(double price);
+    void setSeatCount(int count);
+    void clearSeats();
+    void pushSeat(bool isFree);
+
     virtual double calculatePrice(int seatIndex, double extraParam) const = 0;
+
+   virtual void saveWagonsToFile(std::ofstream& ofs) const=0;
+   virtual void loadWagonsFromFile(std::ifstream& ifs)=0;
 };
 

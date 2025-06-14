@@ -36,5 +36,8 @@ public:
 	void addWagon(const std::shared_ptr<Wagon>& wagon);
 
 	const MyVector<std::shared_ptr<Wagon>>& getWagons() const;
+
+	void saveToFile(std::ofstream& ofs)const;
+	void loadFromFile(std::ifstream& ifs);
 };
 

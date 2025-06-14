@@ -127,25 +127,52 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddStationCommand.cpp" />
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="AdminRepository.cpp" />
+    <ClCompile Include="AgeCard.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandFactory.cpp" />
+    <ClCompile Include="DiscountCard.cpp" />
+    <ClCompile Include="DiscountCardRepository.cpp" />
+    <ClCompile Include="DistanceCard.cpp" />
     <ClCompile Include="FirstClassWagon.cpp" />
+    <ClCompile Include="LoginCommand.cpp" />
     <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="PrintStationsCommand.cpp" />
+    <ClCompile Include="RouteCard.cpp" />
     <ClCompile Include="SecondClassWagon.cpp" />
     <ClCompile Include="SleeperWagon.cpp" />
     <ClCompile Include="Station.cpp" />
     <ClCompile Include="StationRepository.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="TrainStation.cpp" />
+    <ClCompile Include="TrainSystemApp.cpp" />
     <ClCompile Include="Wagon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddStationCommand.h" />
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="AdminRepository.h" />
+    <ClInclude Include="AgeCard.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandFactory.h" />
+    <ClInclude Include="DiscountCard.h" />
+    <ClInclude Include="DiscountCardRepository.h" />
+    <ClInclude Include="DistanceCard.h" />
     <ClInclude Include="FirstClassWagon.h" />
+    <ClInclude Include="LoginCommand.h" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="MyVector.hpp" />
+    <ClInclude Include="PrintStationsCommand.h" />
+    <ClInclude Include="RouteCard.h" />
     <ClInclude Include="SecondClassWagon.h" />
     <ClInclude Include="SleeperWagon.h" />
     <ClInclude Include="Station.h" />
     <ClInclude Include="StationRepository.h" />
+    <ClInclude Include="StringHelper.h" />
     <ClInclude Include="Train.h" />
+    <ClInclude Include="TrainSystemApp.h" />
     <ClInclude Include="Wagon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -37,3 +37,28 @@ void Wagon::occupySeat(int idx)
 		seats[idx] = false;
 	}
 }
+
+void Wagon::setId(int newId)
+{
+	id = newId;
+}
+
+void Wagon::setBasePrice(double price)
+{
+	basePrice = price;
+}
+
+void Wagon::setSeatCount(int count)
+{
+	seatCount = count;
+}
+
+void Wagon::clearSeats()
+{
+	seats.clear();
+}
+
+void Wagon::pushSeat(bool isFree)
+{
+	seats.pushBack(isFree);
+}

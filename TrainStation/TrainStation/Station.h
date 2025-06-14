@@ -28,5 +28,8 @@ public:
 
 	const MyVector<std::shared_ptr<Train>>& getDepartingTrains() const;
 	const MyVector<std::weak_ptr<Train>>& getArrivingTrains() const;
+
+	void save(std::ofstream& ofs) const;
+	void load(std::ifstream& ifs);
 };
 

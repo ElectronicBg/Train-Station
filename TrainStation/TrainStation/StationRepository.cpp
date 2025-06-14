@@ -1,4 +1,55 @@
 #include "StationRepository.h"
+#include <fstream>
+
+void StationRepository::load(const MyString& filename)
+{
+	std::ifstream ifs(filename.getString(), std::ios::binary);
+	if (!ifs.is_open()) {
+		std::cerr << "Failed to open file for loading: " << filename << "\n";
+		return;
+	}
+
+	stations.clear();
+
+	size_t stationCount;
+	ifs.read(reinterpret_cast<char*>(&stationCount), sizeof(stationCount));
+
+	for (size_t i = 0; i < stationCount; ++i) {
+		auto station = std::make_shared<Station>("", 0);
+		station->load(ifs);
+		stations.pushBack(station);
+	}
+
+	for (size_t i = 0; i < stations.getSize(); ++i) {
+		const auto& deps = stations[i]->getDepartingTrains();
+		for (size_t j = 0; j < deps.getSize(); ++j) {
+			const MyString& dest = deps[j]->getArrivalStation();
+			try {
+				auto& destStation = findStationByName(dest);
+				destStation->addArrivingTrain(deps[j]);
+			}
+			catch (const std::exception& ex) {
+				std::cerr << "Warning: Failed to link arrival station '" << dest << "': " << ex.what() << "\n";
+			}
+		}
+	}
+}
+
+void StationRepository::save(const MyString& filename) const
+{
+	std::ofstream ofs(filename.getString(), std::ios::binary);
+	if (!ofs.is_open()) {
+		std::cerr << "Failed to open file for saving: " << filename << "\n";
+		return;
+	}
+
+	size_t stationCount = stations.getSize();
+	ofs.write(reinterpret_cast<const char*>(&stationCount), sizeof(stationCount));
+
+	for (size_t i = 0; i < stationCount; ++i) {
+		stations[i]->save(ofs);
+	}
+}
 
 const std::shared_ptr<Station>& StationRepository::findStationByName(const MyString& name) const
 {
@@ -39,101 +90,4 @@ int StationRepository::getNewStationId() const
 const MyVector<std::shared_ptr<Station>>& StationRepository::getAllStations() const
 {
 	return stations;
-}
-
-const std::shared_ptr<Train>& StationRepository::findTrainById(int id) const
-{
-	for (int i = 0; i < trains.getSize(); ++i) {
-		if (trains[i]->getId() == id) {
-			return trains[i];
-		}
-	}
-	throw std::runtime_error("Train not found: " + id);
-}
-
-std::shared_ptr<Train>& StationRepository::findTrainById(int id)
-{
-	for (int i = 0; i < trains.getSize(); ++i) {
-		if (trains[i]->getId() == id) {
-			return trains[i];
-		}
-	}
-	throw std::runtime_error("Train not found: " + id);
-}
-
-void StationRepository::addTrain(const std::shared_ptr<Train>& train)
-{
-	for (int i = 0; i < trains.getSize(); ++i) {
-		if (trains[i]->getId() == train->getId()) {
-			throw std::runtime_error("Train already exists: " + train->getId());
-		}
-	}
-	trains.pushBack(train);
-
-	MyString depName = train->getDepartureStation();
-	std::shared_ptr<Station> depStation = findStationByName(depName);
-
-	if (depStation) {
-		depStation->addDepartingTrain(train);
-	}
-}
-
-int StationRepository::getTrainsCount() const
-{
-	return trains.getSize();
-}
-
-int StationRepository::getNewTrainId() const
-{
-	return getTrainsCount() + 1;
-}
-
-const MyVector<std::shared_ptr<Train>>& StationRepository::getAllTrains() const
-{
-	return trains;
-}
-
-const std::shared_ptr<Wagon>& StationRepository::findWagonById(int id) const
-{
-	for (int i = 0; i < wagons.getSize(); ++i) {
-		if (wagons[i]->getId() == id) {
-			return wagons[i];
-		}
-	}
-	throw std::runtime_error("Wagon not found: " + id);
-}
-
-std::shared_ptr<Wagon>& StationRepository::findWagonById(int id)
-{
-	for (int i = 0; i < wagons.getSize(); ++i) {
-		if (wagons[i]->getId() == id) {
-			return wagons[i];
-		}
-	}
-	throw std::runtime_error("Wagon not found: " + id);
-}
-
-void StationRepository::addWagon(const std::shared_ptr<Wagon>& wagon)
-{
-	for (int i = 0; i < wagons.getSize(); ++i) {
-		if (wagons[i]->getId() == wagon->getId()) {
-			throw std::runtime_error("Wagon already exists: " + wagon->getId());
-		}
-	}
-	wagons.pushBack(wagon);
-}
-
-int StationRepository::getWagonsCount() const
-{
-	return wagons.getSize();
-}
-
-int StationRepository::getNewWagonId() const
-{
-	return wagons.getSize() + 1;
-}
-
-const MyVector<std::shared_ptr<Wagon>>& StationRepository::getAllWagons() const
-{
-	return wagons;
 }
