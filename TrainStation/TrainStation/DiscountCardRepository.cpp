@@ -84,7 +84,7 @@ std::shared_ptr<DiscountCard> DiscountCardRepository::loadCardFromFile(const MyS
     }
 }
 
-void DiscountCardRepository::saveToFile(const MyString& fileName) const
+void DiscountCardRepository::save(const MyString& fileName) const
 {
     std::ofstream ofs(fileName.getString(), std::ios::binary);
     if (!ofs) throw std::runtime_error("Failed to open discount card file for saving.");
@@ -120,7 +120,7 @@ void DiscountCardRepository::saveToFile(const MyString& fileName) const
     }
 }
 
-void DiscountCardRepository::loadFromFile(const MyString& fileName)
+void DiscountCardRepository::load(const MyString& fileName)
 {
     issuedCards.clear();
 

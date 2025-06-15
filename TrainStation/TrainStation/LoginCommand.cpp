@@ -1,7 +1,7 @@
 #include "LoginCommand.h"
 
 void LoginCommand::execute(const MyVector<MyString>& args, TrainSystemApp& app) const
-{
+{/*
 	if (args.getSize() != 3) {
 		std::cout << "Usage: login <username> <password>\n";
 		return;
@@ -35,5 +35,5 @@ void LoginCommand::execute(const MyVector<MyString>& args, TrainSystemApp& app) 
 	}
 	catch (const std::exception& ex) {
 		std::cout << "Failed to login: " << ex.what() << "\n";
-	}
+	}*/
 }

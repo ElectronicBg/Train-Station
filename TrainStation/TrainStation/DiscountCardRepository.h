@@ -13,8 +13,8 @@ public:
 	bool isCodeValid(int code) const;
 	std::shared_ptr<DiscountCard> loadCardFromFile(const MyString& filename) const;
 
-	void saveToFile(const MyString& fileName) const;
-	void loadFromFile(const MyString& fileName);
+	void save(const MyString& fileName) const;
+	void load(const MyString& fileName);
 	   
 };
 

@@ -7,6 +7,7 @@ class Admin
     MyString password;
 
 public:
+    Admin();
     Admin(const MyString& username, const MyString& password);
 
     const MyString& getUsername() const;

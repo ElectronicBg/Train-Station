@@ -1,5 +1,9 @@
 #include "Admin.h"
 
+Admin::Admin(): username(""), password("")
+{
+}
+
 Admin::Admin(const MyString& username, const MyString& password) : username(username), password(password)
 {
 }

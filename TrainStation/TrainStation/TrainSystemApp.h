@@ -4,14 +4,15 @@
 #include "AdminRepository.h"
 #include "StationRepository.h"
 #include "Admin.h"
+#include "DiscountCardRepository.h"
 
 class TrainSystemApp
 {
     bool running = true;
+
     AdminRepository adminRepo;
     StationRepository stationRepo;
-
-    const Admin* currentAdmin = nullptr;
+    DiscountCardRepository discountCardRepo;
 
     void loadData();
     void saveData();
@@ -25,11 +26,7 @@ public:
 
     StationRepository& getStationRepo();
     AdminRepository& getAdminRepo();
-
-    const Admin* getCurrentAdmin() const;
-    void setCurrentAdmin(const Admin* admin);
-    void logoutAdmin();
-    bool isAdminLoggedIn() const;
+    DiscountCardRepository& getDiscountCardRepo();
 
     void stop();
     bool isRunning() const;
