@@ -1,0 +1,8 @@
+|=== Ticket ===|
+|Train: 2000
+|Wagon: 2
+|Seat: 5
+|Purchased at: 15/06/2025 23:25:52
+|Discount: 0%
+|Price: 70.00
+|===============|

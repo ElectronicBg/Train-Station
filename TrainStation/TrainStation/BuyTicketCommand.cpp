@@ -56,6 +56,11 @@ void BuyTicketCommand::execute(const MyVector<MyString>& args, TrainSystemApp& a
         return;
     }
 
+    if (std::chrono::system_clock::now() > train->getDepartureTime()) {
+        std::cout << "Cannot buy ticket: the train has already departed.\n";
+        return;
+    }
+
     if (seatId < 0 || seatId >= wagon->getSeatCount()) {
         std::cout << "Invalid seat index.\n";
         return;

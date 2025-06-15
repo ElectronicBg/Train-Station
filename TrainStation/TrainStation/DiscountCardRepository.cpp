@@ -38,53 +38,103 @@ std::shared_ptr<DiscountCard> DiscountCardRepository::loadCardFromFile(const MyS
 
     line = readLine();
 
-    if (line == "|===Age card===|") {
-        MyString owner = readLine();
-        MyString ageLine = readLine();
-        MyString codeLine = readLine();
+	if (line == "|===Age card===|") {
+		MyString owner = readLine();
+		MyString ageLine = readLine();
+		MyString codeLine = readLine();
 
-        MyString ageStr;
-        for (size_t i = 0; i < ageLine.getSize(); ++i) {
-            if (ageLine[i] == ' ') break;
-            ageStr.pushBack(ageLine[i]);
-        }
+		for (size_t i = 0; i < owner.getSize(); ++i) {
+			if (owner[i] == '|') {
+				owner.erase(i);
+				i--;
+			}
+		}
+		for (size_t i = 0; i < ageLine.getSize(); ++i) {
+			if (ageLine[i] == '|') {
+				ageLine.erase(i);
+				i--;
+			}
+		}
+		for (size_t i = 0; i < codeLine.getSize(); ++i) {
+			if (codeLine[i] == '|') {
+				codeLine.erase(i);
+				i--;
+			}
+		}
 
-        int age = ageStr.parseToInt();
-        int code = codeLine.parseToInt();
+		MyString ageStr;
+		for (size_t i = 0; i < ageLine.getSize(); ++i) {
+			if (ageLine[i] == ' ') break;
+			ageStr.pushBack(ageLine[i]);
+		}
 
-        return std::make_shared<AgeCard>(code, owner, age);
-    }
-    else if (line == "|===Route card===|") {
-        MyString owner = readLine();
-        MyString route = readLine();
-        MyString codeLine = readLine();
+		int age = ageStr.parseToInt();
+		int code = codeLine.parseToInt();
 
-        for (size_t i = 0; i < codeLine.getSize(); ++i) {
-            if (codeLine[i] == '|') {
-                codeLine.erase(i);
-                i--;
-            }
-        }
-        int code = codeLine.trim().parseToInt();
+		return std::make_shared<AgeCard>(code, owner.trim(), age);
+	}
+	else if (line == "|===Route card===|") {
+		MyString owner = readLine();
+		MyString route = readLine();
+		MyString codeLine = readLine();
 
-        return std::make_shared<RouteCard>(code, owner, route);
-    }
-    else if (line == "|==Distance card==|") {
-        MyString owner = readLine();
-        MyString distLine = readLine();
-        MyString codeLine = readLine();
+		for (size_t i = 0; i < owner.getSize(); ++i) {
+			if (owner[i] == '|') {
+				owner.erase(i);
+				i--;
+			}
+		}
+		for (size_t i = 0; i < route.getSize(); ++i) {
+			if (route[i] == '|') {
+				route.erase(i);
+				i--;
+			}
+		}
+		for (size_t i = 0; i < codeLine.getSize(); ++i) {
+			if (codeLine[i] == '|') {
+				codeLine.erase(i);
+				i--;
+			}
+		}
 
-        MyString distStr;
-        for (size_t i = 0; i < distLine.getSize(); ++i) {
-            if (distLine[i] == ' ') break;
-            distStr.pushBack(distLine[i]);
-        }
+		int code = codeLine.parseToInt();
+		return std::make_shared<RouteCard>(code, owner.trim(), route.trim());
+	}
+	else if (line == "|==Distance card==|") {
+		MyString owner = readLine();
+		MyString distLine = readLine();
+		MyString codeLine = readLine();
 
-        double maxDist = distStr.parseToDouble();
-        int code = codeLine.parseToInt();
+		for (size_t i = 0; i < owner.getSize(); ++i) {
+			if (owner[i] == '|') {
+				owner.erase(i);
+				i--;
+			}
+		}
+		for (size_t i = 0; i < distLine.getSize(); ++i) {
+			if (distLine[i] == '|') {
+				distLine.erase(i);
+				i--;
+			}
+		}
+		for (size_t i = 0; i < codeLine.getSize(); ++i) {
+			if (codeLine[i] == '|') {
+				codeLine.erase(i);
+				i--;
+			}
+		}
 
-        return std::make_shared<DistanceCard>(code, owner, maxDist);
-    }
+		MyString distStr;
+		for (size_t i = 0; i < distLine.getSize(); ++i) {
+			if (distLine[i] == ' ') break;
+			distStr.pushBack(distLine[i]);
+		}
+
+		double maxDist = distStr.parseToDouble();
+		int code = codeLine.parseToInt();
+
+		return std::make_shared<DistanceCard>(code, owner.trim(), maxDist);
+	}
     else {
         throw std::runtime_error("Unknown or unsupported discount card format.");
     }

@@ -1,5 +1,5 @@
 |===Route card===|
 |Ivan_Ivanov|
-|Varna|
-|118467|
+|Gorna|
+|100041|
 |===============|

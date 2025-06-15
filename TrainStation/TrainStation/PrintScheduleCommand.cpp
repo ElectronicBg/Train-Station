@@ -46,7 +46,7 @@ void PrintScheduleCommand::execute(const MyVector<MyString>& args, TrainSystemAp
         for (size_t i = 0; i < arrivals.getSize(); ++i) {
             if (auto trainPtr = arrivals[i].lock()) {
                 std::cout << "- Train " << trainPtr->getId()
-                    << " from " << trainPtr->getDepartureStation()
+                    << " from " << trainPtr->getDepartureStation().getString()
                     << " at " << formatTime(trainPtr->getArrivalTime())
                     << " [Platform " << trainPtr->getArrivalPlatform() << "]";
 
