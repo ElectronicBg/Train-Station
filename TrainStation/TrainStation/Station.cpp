@@ -99,7 +99,10 @@ void Station::save(std::ofstream& ofs) const
 
 void Station::load(std::ifstream& ifs)
 {
-    if (!readString(ifs, name)) throw std::runtime_error("Failed to read station name");
+    if (!readString(ifs, name)) { 
+        throw std::runtime_error("Failed to read station name");
+    }
+
     ifs.read(reinterpret_cast<char*>(&platforms), sizeof(platforms));
 
     size_t trainCount;

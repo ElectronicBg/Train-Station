@@ -146,6 +146,7 @@
     <ClCompile Include="SleeperWagon.cpp" />
     <ClCompile Include="Station.cpp" />
     <ClCompile Include="StationRepository.cpp" />
+    <ClCompile Include="Ticket.cpp" />
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="TrainStation.cpp" />
     <ClCompile Include="TrainSystemApp.cpp" />
@@ -173,6 +174,7 @@
     <ClInclude Include="Station.h" />
     <ClInclude Include="StationRepository.h" />
     <ClInclude Include="StringHelper.h" />
+    <ClInclude Include="Ticket.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="TrainSystemApp.h" />
     <ClInclude Include="Wagon.h" />

@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\CommandFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\CommandFactory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\TrainSystemApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\TrainSystemApp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\LoginCommand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\LoginCommand.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\AdminRepository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\AdminRepository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommandFactory.cpp",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\CommandFactory.cpp",
+              "RelativeDocumentMoniker": "TrainStation\\CommandFactory.cpp",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\CommandFactory.cpp",
+              "RelativeToolTip": "TrainStation\\CommandFactory.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T16:05:31.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrainSystemApp.cpp",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\TrainSystemApp.cpp",
+              "RelativeDocumentMoniker": "TrainStation\\TrainSystemApp.cpp",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\TrainSystemApp.cpp",
+              "RelativeToolTip": "TrainStation\\TrainSystemApp.cpp",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAjwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T13:58:03.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginCommand.cpp",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\LoginCommand.cpp",
+              "RelativeDocumentMoniker": "TrainStation\\LoginCommand.cpp",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\LoginCommand.cpp",
+              "RelativeToolTip": "TrainStation\\LoginCommand.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T15:07:56.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminRepository.cpp",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\AdminRepository.cpp",
+              "RelativeDocumentMoniker": "TrainStation\\AdminRepository.cpp",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\AdminRepository.cpp",
+              "RelativeToolTip": "TrainStation\\AdminRepository.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T15:08:07.527Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

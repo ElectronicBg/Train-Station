@@ -28,6 +28,9 @@
     <Filter Include="Commands">
       <UniqueIdentifier>{b51f597c-1f02-44e5-9c18-5f64892a6fd4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ticket">
+      <UniqueIdentifier>{cc771f56-3a38-4e75-a6fa-94ce10ca83d8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrainStation.cpp">
@@ -37,9 +40,6 @@
       <Filter>Helpers</Filter>
     </ClCompile>
     <ClCompile Include="Station.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Train.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Wagon.cpp">
@@ -98,6 +98,12 @@
     </ClCompile>
     <ClCompile Include="DiscountCardUtils.cpp">
       <Filter>Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="Train.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ticket.cpp">
+      <Filter>Ticket</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="DiscountCardUtils.h">
       <Filter>Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="Ticket.h">
+      <Filter>Ticket</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

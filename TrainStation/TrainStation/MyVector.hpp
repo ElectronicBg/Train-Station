@@ -19,15 +19,18 @@ public:
 	// Constructors / Destructor / Assignment
 	MyVector();
 	MyVector(const MyVector& other);
+	MyVector(MyVector&& other) noexcept;
 	explicit MyVector(size_t capacity);
 	MyVector(size_t size, const T* vector);
 	MyVector& operator=(const MyVector& other);
+	MyVector& operator=(MyVector&& other) noexcept;
 	~MyVector();
 
 	// Element access
-	T   at(size_t index) const;
-	const T& operator[](size_t index) const;
-	T& operator[](size_t index);
+	T& at(size_t index);
+	const T& at(size_t index) const;
+	T& operator[](size_t index) noexcept;
+	const T& operator[](size_t index) const noexcept;
 	T   front() const;
 	T   back() const;
 	T* data() const;
@@ -66,6 +69,11 @@ namespace CONSTANTS {
 template<typename T>
 void MyVector<T>::free() {
 	delete[] vector;
+
+	vector = nullptr;
+
+	size = 0;
+	capacity = 0;
 }
 
 template<typename T>
@@ -128,6 +136,15 @@ MyVector<T>::MyVector(const MyVector& other) {
 }
 
 template<typename T>
+inline MyVector<T>::MyVector(MyVector&& other) noexcept
+	: vector(other.vector), size(other.size), capacity(other.capacity)
+{
+	other.vector = nullptr;
+	other.size = 0;
+	other.capacity = 0;
+}
+
+template<typename T>
 MyVector<T>::MyVector(size_t capacity)
 	: vector(new T[capacity])
 	, size(0)
@@ -155,12 +172,30 @@ MyVector<T>& MyVector<T>::operator=(const MyVector& other) {
 }
 
 template<typename T>
+MyVector<T>& MyVector<T>::operator=(MyVector&& other) noexcept
+{
+	if (this != &other) {
+
+		free();
+
+		vector = other.vector;
+		size = other.size;
+		capacity = other.capacity;
+
+		other.vector = nullptr;
+		other.size = 0;
+		other.capacity = 0;
+	}
+	return *this;
+}
+
+template<typename T>
 MyVector<T>::~MyVector() {
 	free();
 }
 
 template<typename T>
-T MyVector<T>::at(size_t index) const {
+T& MyVector<T>::at(size_t index) {
 	if (index >= size) {
 		throw std::out_of_range("Index out of range");
 	}
@@ -168,12 +203,21 @@ T MyVector<T>::at(size_t index) const {
 }
 
 template<typename T>
-const T& MyVector<T>::operator[](size_t index) const {
+const T& MyVector<T>::at(size_t index) const
+{
+	if (index >= size) {
+		throw std::out_of_range("Index out of range");
+	}
+	return vector[index];
+}
+
+template<typename T>
+const T& MyVector<T>::operator[](size_t index) const noexcept {
 	return at(index);
 }
 
 template<typename T>
-T& MyVector<T>::operator[](size_t index) {
+T& MyVector<T>::operator[](size_t index)noexcept {
 	return vector[index];
 }
 
@@ -243,10 +287,9 @@ void MyVector<T>::popBack() {
 
 template<typename T>
 void MyVector<T>::clear() {
-	delete[] vector;
-	vector = nullptr;
+	for (size_t i = 0; i < size; ++i)
+		vector[i].~T();
 	size = 0;
-	capacity = 0;
 }
 
 template<typename T>

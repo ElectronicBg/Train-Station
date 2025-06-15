@@ -5,13 +5,17 @@ void StationRepository::load(const MyString& filename)
 {
 	std::ifstream ifs(filename.getString(), std::ios::binary);
 	if (!ifs.is_open()) {
-		std::cerr << "Failed to open file for loading: " << filename << "\n";
+		std::cerr << "Failed to open file for loading: " << filename.getString() << " Creating a new file.\n";
+
+		std::ofstream newFile(filename.getString(), std::ios::binary);
+		newFile.close();
+
 		return;
 	}
 
 	stations.clear();
 
-	size_t stationCount;
+	size_t stationCount = 0;
 	ifs.read(reinterpret_cast<char*>(&stationCount), sizeof(stationCount));
 
 	for (size_t i = 0; i < stationCount; ++i) {

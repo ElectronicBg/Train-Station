@@ -125,7 +125,14 @@ void DiscountCardRepository::load(const MyString& fileName)
     issuedCards.clear();
 
     std::ifstream ifs(fileName.getString(), std::ios::binary);
-    if (!ifs) return;
+    if (!ifs.is_open()) {
+        std::cerr << "Failed to open file for loading: " << fileName.getString() << " Creating a new file.\n";
+
+        std::ofstream newFile(fileName.getString(), std::ios::binary);
+        newFile.close();
+
+        return;
+    }
 
     size_t count = 0;
     ifs.read(reinterpret_cast<char*>(&count), sizeof(count));

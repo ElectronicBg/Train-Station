@@ -1,7 +1,9 @@
 #include <iostream>
+#include "TrainSystemApp.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    TrainSystemApp app;
+    app.run();
 }
 

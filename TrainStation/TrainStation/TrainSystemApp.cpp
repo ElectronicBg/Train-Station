@@ -19,7 +19,7 @@ void TrainSystemApp::run()
 
 void TrainSystemApp::loadData()
 {
-    adminRepo.load();  // зарежда вградени админи
+    adminRepo.load();
     stationRepo.load(CONSTANTS::stationsFile);
     discountCardRepo.load(CONSTANTS::discountFile);
 }
@@ -76,7 +76,9 @@ MyVector<MyString> TrainSystemApp::split(const MyString& line) const
 void TrainSystemApp::handleCommand(const MyString& line)
 {
     MyVector<MyString> args = split(line);
-    if (args.empty()) return;
+    if (args.empty()) {
+        return;
+    }
 
     Command* cmd = CommandFactory::create(args[0]);
     if (!cmd) {
