@@ -4,6 +4,11 @@ AgeCard::AgeCard(int code, const MyString& owner, double ageYears) : DiscountCar
 {
 }
 
+double AgeCard::getAge() const
+{
+    return age;
+}
+
 double AgeCard::getDiscount(double ageYears, const MyString& dest, double dist) const
 {
     if (age <= 10) return 1.0;

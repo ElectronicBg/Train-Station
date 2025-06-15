@@ -4,6 +4,11 @@ DistanceCard::DistanceCard(int code, const MyString& owner, double maxDistance) 
 {
 }
 
+double DistanceCard::getMaxDistance() const
+{
+	return maxDistance;
+}
+
 double DistanceCard::getDiscount(double age, const MyString& dest, double travelDistance) const
 {
 	if (travelDistance <= maxDistance) return 0.5;

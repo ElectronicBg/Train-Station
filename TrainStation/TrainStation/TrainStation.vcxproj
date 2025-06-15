@@ -135,6 +135,7 @@
     <ClCompile Include="CommandFactory.cpp" />
     <ClCompile Include="DiscountCard.cpp" />
     <ClCompile Include="DiscountCardRepository.cpp" />
+    <ClCompile Include="DiscountCardUtils.cpp" />
     <ClCompile Include="DistanceCard.cpp" />
     <ClCompile Include="FirstClassWagon.cpp" />
     <ClCompile Include="LoginCommand.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="CommandFactory.h" />
     <ClInclude Include="DiscountCard.h" />
     <ClInclude Include="DiscountCardRepository.h" />
+    <ClInclude Include="DiscountCardUtils.h" />
     <ClInclude Include="DistanceCard.h" />
     <ClInclude Include="FirstClassWagon.h" />
     <ClInclude Include="LoginCommand.h" />

@@ -8,6 +8,7 @@ class AgeCard : public DiscountCard
 public:
     AgeCard(int code, const MyString& owner, double ageYears);
 
+    double getAge()const;
     double getDiscount(double ageYears, const MyString& dest, double dist) const override;
 };
 

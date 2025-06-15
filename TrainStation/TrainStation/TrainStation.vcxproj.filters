@@ -96,6 +96,9 @@
     <ClCompile Include="AddStationCommand.cpp">
       <Filter>Commands</Filter>
     </ClCompile>
+    <ClCompile Include="DiscountCardUtils.cpp">
+      <Filter>Cards</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyVector.hpp">
@@ -166,6 +169,9 @@
     </ClInclude>
     <ClInclude Include="AddStationCommand.h">
       <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscountCardUtils.h">
+      <Filter>Cards</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

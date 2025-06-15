@@ -22,6 +22,7 @@ public:
 	//Capacity
 	bool empty()const;
 	size_t getSize()const;
+	double parseToDouble() const;
 	int getCapacity()const;
 	void shrinkToFit();
 	void reserve(size_t newCapacity);
@@ -35,6 +36,10 @@ public:
 	void swap(MyString& other);
 	void append(const MyString& other);
 	const char* getString()const;
+
+	int parseToInt() const;
+
+	MyString trim() const;
 
 	char& operator[](unsigned index);
 	const char& operator[](unsigned index) const;

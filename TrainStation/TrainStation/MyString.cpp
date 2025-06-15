@@ -119,13 +119,6 @@ void MyString::popBack()
 
 void MyString::clear()
 {
-	//freeDynamicMemory();
-	//size = 0;
-	//capacity = 4;
-
-	//string = new char[capacity];
-	//string[0] = CONSTANTS::TERMINATING_ZERO;
-
 	size = 0;
 	if (string) {
 		string[0] = '\0';
@@ -199,6 +192,28 @@ const char* MyString::getString() const
 size_t MyString::getSize() const
 {
 	return size;
+}
+double MyString::parseToDouble() const {
+	return std::atof(this->getString());
+}
+
+int MyString::parseToInt() const {
+	return std::atoi(this->getString());
+}
+
+MyString MyString::trim() const {
+	size_t start = 0;
+	while (start < size && string[start] == ' ') ++start;
+
+	size_t end = size;
+	while (end > start && string[end - 1] == ' ') --end;
+
+	MyString result;
+	for (size_t i = start; i < end; ++i) {
+		result.pushBack(string[i]);
+	}
+
+	return result;
 }
 
 char& MyString::operator[](unsigned index)

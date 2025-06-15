@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\StationRepository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\StationRepository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\MyString.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\StationRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\StationRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\MyString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Station.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\Station.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCardRepository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\DiscountCardRepository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Train.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\Train.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCardRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\DiscountCardRepository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\SleeperWagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\SleeperWagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DistanceCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\DistanceCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\FirstClassWagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\FirstClassWagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\RouteCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\RouteCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\SecondClassWagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\SecondClassWagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\AgeCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\AgeCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Wagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\Wagon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\DiscountCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F93BE51B-F27E-4EC9-82A7-901948D9B391}|TrainStation\\TrainStation.vcxproj|solutionrelative:TrainStation\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,109 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StationRepository.cpp",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\StationRepository.cpp",
-              "RelativeDocumentMoniker": "TrainStation\\StationRepository.cpp",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\StationRepository.cpp",
-              "RelativeToolTip": "TrainStation\\StationRepository.cpp",
-              "ViewState": "AgIAACIAAAAAAAAAAAAjwCgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-14T15:42:28.963Z",
+              "DocumentIndex": 1,
+              "Title": "MyString.h",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\MyString.h",
+              "RelativeDocumentMoniker": "TrainStation\\MyString.h",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\MyString.h*",
+              "RelativeToolTip": "TrainStation\\MyString.h*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAjwCkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-15T12:25:00.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StationRepository.h",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\StationRepository.h",
-              "RelativeDocumentMoniker": "TrainStation\\StationRepository.h",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\StationRepository.h",
-              "RelativeToolTip": "TrainStation\\StationRepository.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T15:37:30.481Z",
+              "DocumentIndex": 0,
+              "Title": "MyString.cpp",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\MyString.cpp",
+              "RelativeDocumentMoniker": "TrainStation\\MyString.cpp",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\MyString.cpp*",
+              "RelativeToolTip": "TrainStation\\MyString.cpp*",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAwMsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T12:24:38.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Station.h",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Station.h",
-              "RelativeDocumentMoniker": "TrainStation\\Station.h",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Station.h",
-              "RelativeToolTip": "TrainStation\\Station.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T15:22:49.811Z",
+              "Title": "DiscountCardRepository.cpp",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCardRepository.cpp",
+              "RelativeDocumentMoniker": "TrainStation\\DiscountCardRepository.cpp",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCardRepository.cpp",
+              "RelativeToolTip": "TrainStation\\DiscountCardRepository.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T11:25:15.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Train.h",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Train.h",
-              "RelativeDocumentMoniker": "TrainStation\\Train.h",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Train.h",
-              "RelativeToolTip": "TrainStation\\Train.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAPAAAAAAAAAA==",
+              "Title": "DiscountCardRepository.h",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCardRepository.h",
+              "RelativeDocumentMoniker": "TrainStation\\DiscountCardRepository.h",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCardRepository.h*",
+              "RelativeToolTip": "TrainStation\\DiscountCardRepository.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T14:29:25.036Z",
+              "WhenOpened": "2025-06-14T15:44:48.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SleeperWagon.h",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\SleeperWagon.h",
-              "RelativeDocumentMoniker": "TrainStation\\SleeperWagon.h",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\SleeperWagon.h",
-              "RelativeToolTip": "TrainStation\\SleeperWagon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Title": "DistanceCard.h",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DistanceCard.h",
+              "RelativeDocumentMoniker": "TrainStation\\DistanceCard.h",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DistanceCard.h*",
+              "RelativeToolTip": "TrainStation\\DistanceCard.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T14:29:09.055Z",
+              "WhenOpened": "2025-06-15T10:40:26.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SecondClassWagon.h",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\SecondClassWagon.h",
-              "RelativeDocumentMoniker": "TrainStation\\SecondClassWagon.h",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\SecondClassWagon.h",
-              "RelativeToolTip": "TrainStation\\SecondClassWagon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Title": "AgeCard.h",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\AgeCard.h",
+              "RelativeDocumentMoniker": "TrainStation\\AgeCard.h",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\AgeCard.h*",
+              "RelativeToolTip": "TrainStation\\AgeCard.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T14:28:52.203Z"
+              "WhenOpened": "2025-06-15T10:40:21.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FirstClassWagon.h",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\FirstClassWagon.h",
-              "RelativeDocumentMoniker": "TrainStation\\FirstClassWagon.h",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\FirstClassWagon.h",
-              "RelativeToolTip": "TrainStation\\FirstClassWagon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Title": "RouteCard.h",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\RouteCard.h",
+              "RelativeDocumentMoniker": "TrainStation\\RouteCard.h",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\RouteCard.h*",
+              "RelativeToolTip": "TrainStation\\RouteCard.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T14:28:46.071Z",
+              "WhenOpened": "2025-06-15T10:40:12.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Wagon.h",
-              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Wagon.h",
-              "RelativeDocumentMoniker": "TrainStation\\Wagon.h",
-              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Wagon.h",
-              "RelativeToolTip": "TrainStation\\Wagon.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Title": "DiscountCard.h",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCard.h",
+              "RelativeDocumentMoniker": "TrainStation\\DiscountCard.h",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\DiscountCard.h",
+              "RelativeToolTip": "TrainStation\\DiscountCard.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-14T14:26:25.445Z"
+              "WhenOpened": "2025-06-15T10:38:04.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Admin.h",
+              "DocumentMoniker": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Admin.h",
+              "RelativeDocumentMoniker": "TrainStation\\Admin.h",
+              "ToolTip": "D:\\random things\\Visual Studio Projects\\Train-Station\\TrainStation\\TrainStation\\Admin.h",
+              "RelativeToolTip": "TrainStation\\Admin.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-15T10:36:59.319Z",
+              "EditorCaption": ""
             }
           ]
         }
