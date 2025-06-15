@@ -24,7 +24,7 @@ public:
 	void addDepartingTrain(const std::shared_ptr<Train>& train);
 	void addArrivingTrain(const std::shared_ptr<Train>& train);
 
-	std::shared_ptr<Train> addTrain(int id, const MyString& arrivalStationName, const std::chrono::system_clock::time_point& depTime, const std::chrono::system_clock::time_point& arrTime, double distance, double speed);
+	std::shared_ptr<Train> addTrain(int id, const MyString& arrivalStationName, const std::chrono::system_clock::time_point& depTime, double distance, double speed);
 
 	const MyVector<std::shared_ptr<Train>>& getDepartingTrains() const;
 	const MyVector<std::weak_ptr<Train>>& getArrivingTrains() const;

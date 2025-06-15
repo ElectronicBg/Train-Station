@@ -21,6 +21,7 @@ public:
     double getBasePrice() const;
     int getSeatCount() const;
     bool isSeatFree(int idx) const;
+    bool hasOccupiedSeats() const;
     void occupySeat(int idx);
 
     void setId(int newId);
@@ -35,3 +36,12 @@ public:
    virtual void loadWagonsFromFile(std::ifstream& ifs)=0;
 };
 
+static void removeWagonAtIndex(MyVector<std::shared_ptr<Wagon>>& wagons, size_t index) {
+    MyVector<std::shared_ptr<Wagon>> temp;
+    for (size_t i = 0; i < wagons.getSize(); ++i) {
+        if (i != index) {
+            temp.pushBack(wagons[i]);
+        }
+    }
+    wagons = temp;
+}

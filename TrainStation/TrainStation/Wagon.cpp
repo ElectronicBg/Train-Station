@@ -31,6 +31,16 @@ bool Wagon::isSeatFree(int idx) const
 	return idx >= 0 && idx < seatCount && seats[idx];
 }
 
+bool Wagon::hasOccupiedSeats() const
+{
+	for (size_t i = 0; i < seats.getSize(); ++i) {
+		if (!seats[i]) {
+			return true;
+		}
+	}
+	return false; 
+}
+
 void Wagon::occupySeat(int idx)
 {
 	if (isSeatFree(idx)) {
@@ -62,3 +72,5 @@ void Wagon::pushSeat(bool isFree)
 {
 	seats.pushBack(isFree);
 }
+
+

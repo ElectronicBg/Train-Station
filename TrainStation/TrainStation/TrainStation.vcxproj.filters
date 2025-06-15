@@ -105,6 +105,45 @@
     <ClCompile Include="Ticket.cpp">
       <Filter>Ticket</Filter>
     </ClCompile>
+    <ClCompile Include="AddTrainCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="AddWagonCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveWagonCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveWagonCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateDiscountCardCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="ValidateDiscountCardCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintScheduleCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintScheduleDestinationCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintScheduleTimeCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintTrainCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintWagonCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="BuyTicketCommand.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="BuyTicketDiscountCommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyVector.hpp">
@@ -181,6 +220,45 @@
     </ClInclude>
     <ClInclude Include="Ticket.h">
       <Filter>Ticket</Filter>
+    </ClInclude>
+    <ClInclude Include="AddTrainCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="AddWagonCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoveWagonCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveWagonCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateDiscountCardCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="ValidateDiscountCardCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintScheduleCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintScheduleDestinationCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintScheduleTimeCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintTrainCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintWagonCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="BuyTicketCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="BuyTicketDiscountCommand.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

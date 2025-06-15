@@ -22,7 +22,7 @@ void LoginCommand::execute(const MyVector<MyString>& args, TrainSystemApp& app) 
 			return;
 		}
 
-		std::cout << "Login successful as '" << username.getString() << "'\n";
+		std::cout << "Welcome back, " << username.getString() << "!\n";
 	}
 	catch (const std::exception& ex) {
 		std::cout << "Failed to login: " << ex.what() << "\n";

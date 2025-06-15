@@ -128,19 +128,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AddStationCommand.cpp" />
+    <ClCompile Include="AddTrainCommand.cpp" />
+    <ClCompile Include="AddWagonCommand.cpp" />
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="AdminRepository.cpp" />
     <ClCompile Include="AgeCard.cpp" />
+    <ClCompile Include="BuyTicketCommand.cpp" />
+    <ClCompile Include="BuyTicketDiscountCommand.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="CommandFactory.cpp" />
+    <ClCompile Include="CreateDiscountCardCommand.cpp" />
     <ClCompile Include="DiscountCard.cpp" />
     <ClCompile Include="DiscountCardRepository.cpp" />
     <ClCompile Include="DiscountCardUtils.cpp" />
     <ClCompile Include="DistanceCard.cpp" />
     <ClCompile Include="FirstClassWagon.cpp" />
     <ClCompile Include="LoginCommand.cpp" />
+    <ClCompile Include="MoveWagonCommand.cpp" />
     <ClCompile Include="MyString.cpp" />
+    <ClCompile Include="PrintScheduleCommand.cpp" />
+    <ClCompile Include="PrintScheduleDestinationCommand.cpp" />
+    <ClCompile Include="PrintScheduleTimeCommand.cpp" />
     <ClCompile Include="PrintStationsCommand.cpp" />
+    <ClCompile Include="PrintTrainCommand.cpp" />
+    <ClCompile Include="PrintWagonCommand.cpp" />
+    <ClCompile Include="RemoveWagonCommand.cpp" />
     <ClCompile Include="RouteCard.cpp" />
     <ClCompile Include="SecondClassWagon.cpp" />
     <ClCompile Include="SleeperWagon.cpp" />
@@ -150,24 +162,37 @@
     <ClCompile Include="Train.cpp" />
     <ClCompile Include="TrainStation.cpp" />
     <ClCompile Include="TrainSystemApp.cpp" />
+    <ClCompile Include="ValidateDiscountCardCommand.cpp" />
     <ClCompile Include="Wagon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddStationCommand.h" />
+    <ClInclude Include="AddTrainCommand.h" />
+    <ClInclude Include="AddWagonCommand.h" />
     <ClInclude Include="Admin.h" />
     <ClInclude Include="AdminRepository.h" />
     <ClInclude Include="AgeCard.h" />
+    <ClInclude Include="BuyTicketCommand.h" />
+    <ClInclude Include="BuyTicketDiscountCommand.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandFactory.h" />
+    <ClInclude Include="CreateDiscountCardCommand.h" />
     <ClInclude Include="DiscountCard.h" />
     <ClInclude Include="DiscountCardRepository.h" />
     <ClInclude Include="DiscountCardUtils.h" />
     <ClInclude Include="DistanceCard.h" />
     <ClInclude Include="FirstClassWagon.h" />
     <ClInclude Include="LoginCommand.h" />
+    <ClInclude Include="MoveWagonCommand.h" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="MyVector.hpp" />
+    <ClInclude Include="PrintScheduleCommand.h" />
+    <ClInclude Include="PrintScheduleDestinationCommand.h" />
+    <ClInclude Include="PrintScheduleTimeCommand.h" />
     <ClInclude Include="PrintStationsCommand.h" />
+    <ClInclude Include="PrintTrainCommand.h" />
+    <ClInclude Include="PrintWagonCommand.h" />
+    <ClInclude Include="RemoveWagonCommand.h" />
     <ClInclude Include="RouteCard.h" />
     <ClInclude Include="SecondClassWagon.h" />
     <ClInclude Include="SleeperWagon.h" />
@@ -177,6 +202,7 @@
     <ClInclude Include="Ticket.h" />
     <ClInclude Include="Train.h" />
     <ClInclude Include="TrainSystemApp.h" />
+    <ClInclude Include="ValidateDiscountCardCommand.h" />
     <ClInclude Include="Wagon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

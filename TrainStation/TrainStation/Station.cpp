@@ -68,9 +68,16 @@ void Station::addArrivingTrain(const std::shared_ptr<Train>& train)
     arrivals.pushBack(train);
 }
 
-std::shared_ptr<Train> Station::addTrain(int id,const MyString& arrivalStationName,const std::chrono::system_clock::time_point& depTime,const std::chrono::system_clock::time_point& arrTime,double distance,double speed) {
+std::shared_ptr<Train> Station::addTrain(int id,const MyString& arrivalStationName,const std::chrono::system_clock::time_point& depTime,double distance,double speed) {
+    auto travelMinutes = static_cast<int>((distance / speed) * 60);
+    auto arrTime = depTime + std::chrono::minutes(travelMinutes);
+
     auto train = std::make_shared<Train>(id, name, arrivalStationName, depTime, arrTime, distance, speed);
-    addDepartingTrain(train);
+
+    int depPlat = assignPlatform(depTime);
+    train->setDeparturePlatform(depPlat);
+    departures.pushBack(train);
+
     return train;
 }
 

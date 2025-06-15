@@ -1,4 +1,5 @@
 #include "Ticket.h"
+#pragma warning(disable : 4996)
 #include <fstream>
 #include <ctime>
 #include <iomanip>
@@ -21,7 +22,7 @@ void Ticket::saveToFile(const MyString& fileName) const
 	ofs << "Train ID: " << trainId << '\n';
 	ofs << "Wagon ID: " << wagonId << '\n';
 	ofs << "Seat ID: " << seatId << '\n';
-	//ofs << "Purchase Time: " << std::put_time(std::localtime(&t), "%d/%m/%Y %H:%M:%S") << '\n';
+	ofs << "Purchase Time: " << std::put_time(std::localtime(&t), "%d/%m/%Y %H:%M:%S") << '\n';
 	ofs << "Final Price: " << finalPrice << " BGN\n";
 	ofs << "Discount Applied: " << discountAmount << " BGN\n";
 	ofs << "|==============|\n";
