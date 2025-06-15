@@ -44,7 +44,7 @@ void AddTrainCommand::execute(const MyVector<MyString>& args, TrainSystemApp& ap
 		}
 		auto departureTime = std::chrono::system_clock::from_time_t(departureTimestamp);
 
-		int trainId = app.getStationRepo().getNewStationId();
+		int trainId = app.getStationRepo().getNewTrainId();
 
 		auto train = fromStation->addTrain(trainId, to, departureTime, distance, speed);
 

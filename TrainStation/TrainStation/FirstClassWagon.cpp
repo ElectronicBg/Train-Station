@@ -59,12 +59,6 @@ void FirstClassWagon::loadWagonsFromFile(std::ifstream& ifs)
 		bool taken;
 		ifs.read(reinterpret_cast<char*>(&taken), sizeof(taken));
 		pushSeat(!taken);
-
-
-		for (int i = 0; i < seatCount; ++i) {
-			bool taken;
-			ifs.read(reinterpret_cast<char*>(&taken), sizeof(taken));
-			if (taken) occupySeat(i);
-		}
+		if (taken) occupySeat(i);
 	}
 }

@@ -41,17 +41,17 @@ void AddWagonCommand::execute(const MyVector<MyString>& args, TrainSystemApp& ap
 	int newWagonId = (int)targetTrain->getWagons().getSize() + 1;
 	std::shared_ptr<Wagon> wagon;
 
-	if (type == "first") {
+	if (type == "first-class") {
 		if (args.getSize() < 5) {
-			std::cout << "Usage for first class: add-wagon <trainID> first <basePrice> <comfortFactor>\n";
+			std::cout << "Usage for first class: add-wagon <trainID> first-class <basePrice> <comfortFactor>\n";
 			return;
 		}
 		double comfort = args[4].parseToDouble();
 		wagon = std::make_shared<FirstClassWagon>(newWagonId, basePrice, comfort);
 	}
-	else if (type == "second") {
+	else if (type == "second-class") {
 		if (args.getSize() < 5) {
-			std::cout << "Usage for second class: add-wagon <trainID> second <basePrice> <baggagePricePerKg>\n";
+			std::cout << "Usage for second class: add-wagon <trainID> second-class <basePrice> <baggagePricePerKg>\n";
 			return;
 		}
 		double baggage = args[4].parseToDouble();
@@ -71,5 +71,21 @@ void AddWagonCommand::execute(const MyVector<MyString>& args, TrainSystemApp& ap
 	}
 
 	targetTrain->addWagon(wagon);
-	std::cout << "Wagon " << newWagonId << " added to train " << trainId << ".\n";
+
+	MyString wagonTypeStr;
+	switch (wagon->getType()) {
+	case WagonType::FirstClass:
+		wagonTypeStr = "First-class";
+		break;
+	case WagonType::SecondClass:
+		wagonTypeStr = "Second-class";
+		break;
+	case WagonType::Sleeper:
+		wagonTypeStr = "Sleeper";
+		break;
+	}
+
+	std::cout << wagonTypeStr.getString() << " wagon with ID " << newWagonId
+		<< " added to train " << trainId << ".\n";
+
 }

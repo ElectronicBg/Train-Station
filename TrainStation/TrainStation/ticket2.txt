@@ -1,0 +1,8 @@
+|=== Ticket ===|
+|Train: 2003
+|Wagon: 1
+|Seat: 9
+|Purchased at: 15/06/2025 22:34:58
+|Discount: 0%
+|Final Price: 40.00
+|===============|

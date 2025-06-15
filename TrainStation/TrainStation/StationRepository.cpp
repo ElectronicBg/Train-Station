@@ -86,9 +86,21 @@ int StationRepository::getStationsCount() const
 	return stations.getSize();
 }
 
+int StationRepository::getTrainCount() const
+{
+	int count = 0;
+	for (size_t i = 0; i < stations.getSize(); ++i) {
+		count += stations[i]->getDepartingTrains().getSize();
+	}
+	return count;
+}
+int StationRepository::getNewTrainId() const
+{
+	return getTrainCount() + 2000;
+}
 int StationRepository::getNewStationId() const
 {
-	return getStationsCount() + 1;
+	return getStationsCount() + 2000;
 }
 
 const MyVector<std::shared_ptr<Station>>& StationRepository::getAllStations() const

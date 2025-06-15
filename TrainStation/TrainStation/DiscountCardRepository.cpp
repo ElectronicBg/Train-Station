@@ -59,7 +59,13 @@ std::shared_ptr<DiscountCard> DiscountCardRepository::loadCardFromFile(const MyS
         MyString route = readLine();
         MyString codeLine = readLine();
 
-        int code = codeLine.parseToInt();
+        for (size_t i = 0; i < codeLine.getSize(); ++i) {
+            if (codeLine[i] == '|') {
+                codeLine.erase(i);
+                i--;
+            }
+        }
+        int code = codeLine.trim().parseToInt();
 
         return std::make_shared<RouteCard>(code, owner, route);
     }
